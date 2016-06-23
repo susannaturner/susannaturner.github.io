@@ -1,0 +1,101 @@
+/* ------ Susy site ---------*/
+/* ------ Author: http://sousadesign.github.io ---------*/
+h1,h2,h3, a, p{
+	font-family:'Roboto Condensed', sans-serif;
+}
+.nav > li > a {
+    text-align: center;
+}
+.jumbotron{
+	background-image: url(../images/antigua-background.jpg);
+    background-color: #445296;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 715px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.jumbotron h1 {
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 440px;
+}
+.nav > li > a {
+    color: white;
+    font-weight: bold;
+    font-size:1.9rem;
+}
+.nav > li > a:focus, .nav > li >a:hover{
+	background-color:#445296;
+}
+.nav-pills > li > a {
+    border-radius: 0px;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.portfolio{
+	background-color:#445296;
+    background-image: url(../images/portfolio-background.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+.portfolio h3{
+    background-color: white;
+}
+.portfolio h3, .about h3, .contact h3 {
+    color: #445296;
+    margin: 0 auto;
+    padding: 6px;
+    width: 240px;
+    text-align: center;
+    margin-top:35px;
+}
+
+
+.about {
+    background-image: url(../images/india-background.jpg);
+    background-size: cover;
+    min-height: 770px;
+    position: relative;
+    text-align: left;
+    border-top: 2px solid white;
+}
+.about img {
+    border: 3px solid white;
+    border-radius: 100%;
+    float: left;
+    width: 189px;
+    margin: 14px 25px;
+}
+.about-section {
+    float: right;
+    height: 201px;
+    margin-bottom: 130px;
+    margin-top: 0;
+    padding: 16px 0 0 128px;
+    width: 650px;
+}
+
+.about-section p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+}
+.about h3 {
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 184px;
+}
+.contact h3 {
+    border: 2px solid #445296;
+    color: #445296;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 184px;
+}
