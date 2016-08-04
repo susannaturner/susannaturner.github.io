@@ -92,6 +92,9 @@ h1,h2,h3, a, p{
     margin-bottom: 60px;
     width: 184px;
 }
+.susy-photo{
+    border-right:2px solid white;
+}
 .contact h3 {
     border: 2px solid #445296;
     color: #445296;
@@ -99,3 +102,80 @@ h1,h2,h3, a, p{
     margin-bottom: 60px;
     width: 184px;
 }
+/*Responsive menu class*/
+.navbar-default {
+    background-color: transparent !important;
+    border-color:  transparent !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle {
+    background-color: #445296;
+}
+.navbar-toggle:hover {
+    background-color: #384272 !important;
+}
+.navbar-toggle:focus {
+    background-color: #384272 !important;
+}
+.navbar-collapse {
+    background-color: #fff;
+    margin: 0 auto !important;
+    position: relative;
+}
+/*Mediaqueries*/
+@media (min-device-width:769px){
+    .menu-mobile{
+        display:none;
+    }
+    .menu-site{
+        display:block;
+    }
+}
+@media (max-device-width:768px){
+    .jumbotron {
+        background-image: url("../images/antigua-background-tablet.jpg");
+        min-height: 359px;
+    }
+    .menu-mobile{
+        display:block;
+    }
+    .menu-site{
+        display:none;
+    }
+    .portfolio {
+        background-size: auto auto;
+    }
+    .about-section {
+        background-color: rgba(1, 1, 1, 0.5);
+        padding: 30px;
+        width: 650px;
+        height:auto;
+    }
+    .about img {
+        float: none;
+        margin:0;
+    }
+    .about-section {
+        width: auto;
+    }
+    .susy-photo{
+        border-right: none;
+        margin: 0 auto 20px;
+        width: 189px;
+    }
+    .about-section p {
+        font-size: 1.2em;
+        font-weight: 100;
+        text-align: center;
+    }
+}
+@media (max-device-width:380px){
+    .jumbotron {
+        background-image: url("../images/antigua-background-tablet.jpg");
+        margin-top: 50px;
+        min-height: 0px;
+    }
+}
+
