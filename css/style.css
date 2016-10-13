@@ -125,7 +125,10 @@ h1,h2,h3, a, p{
     position: relative;
 }
 /*Mediaqueries*/
-@media (min-device-width:769px){
+@media (min-width:768px)(max-width:768px){
+
+}
+@media (min-width:769px){
     .menu-mobile{
         display:none;
     }
@@ -133,7 +136,7 @@ h1,h2,h3, a, p{
         display:block;
     }
 }
-@media (max-device-width:768px){
+@media (max-width:768px){
     .jumbotron {
         background-image: url("../images/antigua-background-tablet.jpg");
         min-height: 359px;
@@ -171,7 +174,7 @@ h1,h2,h3, a, p{
         text-align: center;
     }
 }
-@media (max-device-width:380px){
+@media (max-width:380px){
     .jumbotron {
         background-image: url("../images/antigua-background-tablet.jpg");
         margin-top: 50px;
