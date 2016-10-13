@@ -10,7 +10,7 @@ h1,h2,h3, a, p{
 	background-image: url(../images/antigua-background.jpg);
     background-color: #445296;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     min-height: 715px;
     margin-bottom: 0;
     text-align: center;
@@ -125,8 +125,8 @@ h1,h2,h3, a, p{
     position: relative;
 }
 /*Mediaqueries*/
-@media (min-width:768px)(max-width:768px){
-
+@media (min-width:768px)(max-width:1024px){
+    
 }
 @media (min-width:769px){
     .menu-mobile{
