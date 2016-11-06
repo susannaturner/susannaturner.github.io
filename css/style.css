@@ -1,184 +1,319 @@
-/* ------ Susy site ---------*/
-/* ------ Author: http://sousadesign.github.io ---------*/
-h1,h2,h3, a, p{
-	font-family:'Roboto Condensed', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:300,400');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?iubfmk');
+  src:  url('../fonts/icomoon.eot?iubfmk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?iubfmk') format('truetype'),
+    url('../fonts/icomoon.woff?iubfmk') format('woff'),
+    url('../fonts/icomoon.svg?iubfmk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-.nav > li > a {
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-chevron-down {
+    line-height: 0;
     text-align: center;
 }
-.jumbotron{
-	background-image: url(../images/antigua-background.jpg);
-    background-color: #445296;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 715px;
-    margin-bottom: 0;
-    text-align: center;
+html{
+  font-size:65%;
 }
-.jumbotron h1 {
-    border-bottom: 1px solid white;
-    color: white;
-    font-weight: bold;
+/*Toggle*/
+.navbar-toggle span{
+  background-color:#000;
+}
+.gradient-overlay{
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    background: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
+	    background: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
+	    background: linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0.92) 35%, rgba(255,255,255,0.4) 100%);
+}
+.loop-container {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+#looped-vid {
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*General*/
+body{
+  background-color:#F2EC79;
+}
+h2, h3, h4, h5, span, p, a{
+    font-family: 'Oswald', sans-serif;
+    text-align:center;
+}
+h1{
+	font-family: 'Abril Fatface', cursive;
+	font-size:4.5rem;
+}
+.h2, h2 {
+    font-size: 4rem; /*font-size: 40px;*/
+}
+.h3, h3 {
+    font-size: 3.5rem; /*font-size: 45px;*/
+}
+.h4, h4{
+  font-size:3rem;
+}
+.h5, h5 {
+    font-size: 3.5rem;
+}
+a{
+	color:#000;
+	text-decoration: none;
+}
+p{
+	font-size:1.5rem;
+  line-height: 2.5rem;
+}
+.btn {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 0;
+    display: block;
     margin: 0 auto;
-    max-width: 440px;
+    padding: 10px 25px;
+    font-size:0.8em;
+    transition:.3s ease-in-out;
 }
-.nav > li > a {
-    color: white;
-    font-weight: bold;
-    font-size:1.9rem;
+.btn:hover {
+    background-color: #333;
+    color:#fff;
+    transition:.3s ease-in-out;
 }
-.nav > li > a:focus, .nav > li >a:hover{
-	background-color:#445296;
+.section .container > h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
 }
-.nav-pills > li > a {
-    border-radius: 0px;
+a:focus, a:hover {
+    text-decoration: none;
 }
-.navbar {
-    margin-bottom: 0px;
+/*Logo*/
+svg {
+    overflow: hidden;
+    margin-top: 10px;
 }
+/*Navigation*/
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    color: #0B4F6C;
+}
+#logo {
+    font-size: 2rem;
+}
+nav {
+    background-color: #fff;
+}
+.section .container{
+	margin-top:150px;
+	margin-bottom:150px;
+}
+/*Main Section*/
+.hero {
+    border: 1px solid black;
+    margin: 160px auto;
+    padding: 32px;
+    text-align: center;
+    max-width: 825px;
+}
+.hero > span {
+    font-size: 1.6rem;
+}
+/* About section*/
+
+.about-photo {
+    display: block;
+    height: 230px;
+    margin: 45px auto;
+    width: 230px;
+}
+.text-box{
+	padding: 35px 0px;
+}
+.text-box p {
+    color: #555;
+    font-family: helvetica;
+    text-align: center;
+}
+/*Portfolio*/
 .portfolio{
-	background-color:#445296;
-    background-image: url(../images/portfolio-background.jpg);
-    background-attachment: fixed;
-    background-size: contain;
+	background-image: url("../images/antigua-background.jpg");
+	background-attachment: fixed;
+  background-size: cover;
+	background-color: #333;
 }
-.portfolio h3{
-    background-color: white;
-}
-.portfolio h3, .about h3, .contact h3 {
-    color: #445296;
-    margin: 0 auto;
-    padding: 6px;
-    width: 240px;
-    text-align: center;
-    margin-top:35px;
-}
+.section.portfolio{
+	padding-top:150px;
 
-
-.about {
-    background-image: url(../images/india-background.jpg);
-    background-size: cover;
-    min-height: 770px;
+}
+.section.portfolio h2{
+	padding-bottom:25px;
+	color:#fff;
+  border-bottom: 1px solid #fff;
+  margin: 30px;
+}
+.section.portfolio h3{
+  color:#fff;
+  padding: 25px 0;
+}
+.section.portfolio span {
+    font-size: 2rem;
+    top: 5px;
     position: relative;
-    text-align: left;
-    border-top: 2px solid white;
+    padding-right: 9px;
 }
-.about img {
-    border: 3px solid white;
-    border-radius: 100%;
-    float: left;
-    width: 189px;
-    margin: 14px 25px;
+.section.portfolio .btn{
+    margin: 100px auto;
+    padding: 25px 45px;
+    position: relative;
+    top: 50px;
 }
-.about-section {
-    float: right;
-    height: 201px;
-    margin-bottom: 130px;
-    margin-top: 0;
-    padding: 16px 0 0 128px;
-    width: 650px;
+.thumbnail {
+    background-color: none;
+    border: none;
+    border-radius: 0px;
+    display: block;
+    line-height: none;
+    margin-bottom: 0px;
+    padding: 0px;
+    transition: border 0.2s ease-in-out 0s;
+}
+.col-xs-6.col-md-3 {
+    padding: 0;
+}
+.box-description {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    opacity: 0;
+    padding: 75px 35px;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.25s ease-in-out 0s;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.box-description:hover{
+  opacity:1;
+}
+.box-description h4{
+  font-family: 'Abril Fatface', cursive;
+  color:#fff;
+}
+.box-description h5{
+  color:#fff;
 }
 
-.about-section p {
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: justify;
+/*Contact*/
+.contact-box {
+  text-align: center;
+  margin:25px;
 }
-.about h3 {
-    border: 2px solid #fff;
-    color: #fff;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    width: 184px;
-}
-.susy-photo{
-    border-right:2px solid white;
-}
-.contact h3 {
-    border: 2px solid #445296;
-    color: #445296;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    width: 184px;
-}
-/*Responsive menu class*/
-.navbar-default {
-    background-color: transparent !important;
-    border-color:  transparent !important;
-}
-.navbar-default .navbar-toggle .icon-bar {
+.contact-box span {
     background-color: #fff;
+    border-radius: 25px;
+    padding: 10px;
 }
-.navbar-toggle {
-    background-color: #445296;
+.contact{
+  background-image:url("../images/waves.svg");
+  height: 101px;
+  margin-top: -82px;
+  opacity: 0.4;
 }
-.navbar-toggle:hover {
-    background-color: #384272 !important;
-}
-.navbar-toggle:focus {
-    background-color: #384272 !important;
-}
-.navbar-collapse {
-    background-color: #fff;
-    margin: 0 auto !important;
-    position: relative;
-}
+
 /*Mediaqueries*/
-@media (min-width:768px)(max-width:1024px){
-    
-}
-@media (min-width:769px){
-    .menu-mobile{
-        display:none;
-    }
-    .menu-site{
-        display:block;
-    }
-}
-@media (max-width:768px){
-    .jumbotron {
-        background-image: url("../images/antigua-background-tablet.jpg");
-        min-height: 359px;
-    }
-    .menu-mobile{
-        display:block;
-    }
-    .menu-site{
-        display:none;
-    }
-    .portfolio {
-        background-size: auto auto;
-    }
-    .about-section {
-        background-color: rgba(1, 1, 1, 0.5);
-        padding: 30px;
-        width: 650px;
-        height:auto;
-    }
-    .about img {
-        float: none;
-        margin:0;
-    }
-    .about-section {
-        width: auto;
-    }
-    .susy-photo{
-        border-right: none;
-        margin: 0 auto 20px;
-        width: 189px;
-    }
-    .about-section p {
-        font-size: 1.2em;
-        font-weight: 100;
-        text-align: center;
-    }
-}
-@media (max-width:380px){
-    .jumbotron {
-        background-image: url("../images/antigua-background-tablet.jpg");
-        margin-top: 50px;
-        min-height: 0px;
-    }
+@media (max-width: 1100px){
+  #looped-vid{
+    display:none;
+  }
+.gradient-overlay {
+    background-color: #0B4F6C;
 }
 
+}
+@media (max-width: 767px){
+  .h4, h4{
+    font-size:3rem;
+  }  
+  .h5, h5{
+    font-size:2rem;
+
+  }
+  .text-box {
+    padding:0px;
+  }
+  svg{
+    margin-left: 15px;
+  }
+  .hero {
+      margin: 100px auto;
+  }
+  /*Contact*/
+  .contact-box span {
+      float: left;
+  }
+  .contact-box a {
+      display: block;
+      margin-left: 60px;
+      position: relative;
+      text-align: left;
+  }
+}
+
+@media (max-width: 450px) {
+  html{
+  font-size:50%;
+  }
+  .h4, h4{
+    font-size:1.8rem;
+  }  
+  .h5, h5{
+    font-size:2rem;
+
+  }
+  .section .container {
+      margin-top: 50px;
+      margin-bottom: 95px;
+  }
+  .section.portfolio {
+      padding-top: 50px;
+  }
+  .box-description {
+      padding: 55px 35px;
+  }
+}
