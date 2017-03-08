@@ -95,14 +95,11 @@ h1{
     font-size: 3.5rem;
 }
 a{
-	color:#333;
+	color:#000;
 	text-decoration: none;
 }
-a:focus, a:hover{
-  color:#333;
-}
 p{
-	font-size:1.5rem;
+	font-size:1.4rem;
   line-height: 2.5rem;
 }
 .btn {
@@ -112,7 +109,7 @@ p{
     display: block;
     margin: 0 auto;
     padding: 10px 25px;
-    font-size:1em;
+    font-size:0.8em;
     transition:.3s ease-in-out;
 }
 .btn:hover {
@@ -162,16 +159,18 @@ nav {
 
 .about-photo {
     display: block;
-    height: 230px;
+    /* height: 230px; */
     margin: 45px auto;
-    width: 230px;
+    /* width: 230px; */
+    max-width: 500px;
+    padding: 5px;
 }
 .text-box{
-	padding: 35px 0px;
+	padding: 75px 0px;
 }
 .text-box p {
-    color: #555;
-    font-family: helvetica;
+    color: #000;
+    font-family: cursive;
     text-align: center;
 }
 /*Portfolio*/
@@ -278,7 +277,7 @@ nav {
 
   }
   .text-box {
-    padding:0px;
+    padding:0px 0px;
   }
   svg{
     margin-left: 15px;
@@ -312,6 +311,9 @@ nav {
   .section .container {
       margin-top: 50px;
       margin-bottom: 95px;
+  }
+  .about-photo {
+    max-width: 270px;
   }
   .section.portfolio {
       padding-top: 50px;
