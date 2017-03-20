@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald');
 
 @font-face {
   font-family: 'icomoon';
@@ -75,11 +75,11 @@ body{
   background-color:#F2EC79;
 }
 h2, h3, h4, h5, span, p, a{
-    font-family: 'Oswald', sans-serif;
     text-align:center;
+    font-family: 'Oswald', sans-serif;
 }
 h1{
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size:4.5rem;
 }
 .h2, h2 {
@@ -97,10 +97,14 @@ h1{
 a{
 	color:#000;
 	text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 p{
-	font-size:1.4rem;
+	font-size:1.5rem;
   line-height: 2.5rem;
+}
+.nav a{
+  font-family: 'Oswald', sans-serif;
 }
 .btn {
     background-color: #fff;
@@ -111,6 +115,7 @@ p{
     padding: 10px 25px;
     font-size:0.8em;
     transition:.3s ease-in-out;
+    font-family: "Oswald", sans-serif;
 }
 .btn:hover {
     background-color: #333;
@@ -170,8 +175,9 @@ nav {
 }
 .text-box p {
     color: #000;
-    font-family: cursive;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
+    font-weight:bold;
 }
 /*Portfolio*/
 .portfolio{
@@ -234,22 +240,25 @@ nav {
   opacity:1;
 }
 .box-description h4{
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color:#fff;
 }
 .box-description h5{
   color:#fff;
 }
-
+.subcategory h3{
+  text-align:left;
+  margin-left:25px;
+}
 /*Contact*/
 .contact-box {
   text-align: center;
   margin:25px;
 }
 .contact-box span {
-    background-color: #fff;
     border-radius: 25px;
     padding: 10px;
+    font-size: 1.5em;
 }
 .contact{
   background-image:url("../images/waves.svg");
@@ -266,7 +275,9 @@ nav {
 .gradient-overlay {
     background-color: #0B4F6C;
 }
-
+  .text-box {
+    padding: 0px;
+  }
 }
 @media (max-width: 767px){
   .h4, h4{
@@ -313,7 +324,7 @@ nav {
       margin-bottom: 95px;
   }
   .about-photo {
-    max-width: 270px;
+    max-width: 360px;
   }
   .section.portfolio {
       padding-top: 50px;
